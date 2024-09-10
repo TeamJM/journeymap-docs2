@@ -1,0 +1,218 @@
+site_name: JourneyMap Documentation
+site_url: https://teamjm.github.io/journeymap-docs/
+docs_dir: ../docs/
+
+repo_name: TeamJM/journeymap-docs
+repo_url: https://github.com/TeamJM/journeymap-docs
+
+theme:
+  name: material
+  custom_dir: ../overrides
+  features:
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra:
+  version:
+    provider: mike
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - def_list
+
+plugins:
+  - glightbox
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          nav_translations:
+            Home: Home
+            About: About
+            Credits: Credits
+            Licensing: Licensing
+            Support: Support
+            Client Docs: Client Docs
+            Installing: Installing
+            Basic Usage: Basic Usage
+            Full-Screen Map: Full-Screen Map
+            Settings: Settings
+            Overview: Overview
+            Grid: Grid
+            Minimap: Minimap
+            Minimap Position: Minimap Position
+            Full-Screen Map: Full-Screen Map
+            Webmap: Webmap
+            Waypoint: Waypoint
+            Waypoint Beacons: Waypoint Beacons
+            Cartography: Cartography
+            Advanced Options: Advanced Options
+            Waypoints: Waypoints
+            Server Docs: Server Docs
+            Installing: Installing
+            Basic Usage: Basic Usage
+            Commands: Commands
+            Waypoint: Waypoint
+            Settings: Settings
+            Overview: Overview
+            Global Properties: Global Properties
+            Default Dimension Properties: Default Dimension Properties
+            Dimension - minecraft:overworld: Dimension - minecraft:overworld
+            Dimension - minecraft:the_nether: Dimension - minecraft:the_nether
+            Dimension - minecraft:the_end: Dimension - minecraft:the_end
+            Multiplayer: Multiplayer
+            Endpoints: Endpoints
+            Waypoint: Waypoint
+            Tools & Customisation: Tools & Customisation
+            Custom Mob Icons: Custom Mob Icons
+            Integrate your mod: Integrate your mod
+            JourneyMap Tools: JourneyMap Tools
+            Map a multiplayer server: Map a multiplayer server
+            Topographic: Topographic
+            UI Themes: UI Themes
+            Contributing: Contributing
+            Translate the mod: Translate the mod
+            Translate the docs: Translate the docs
+            Changelogs: Changelogs
+        - locale: es
+          default: false
+          name: Español
+          build: true
+          nav_translations:
+            Home: Principal
+            About: Acerca de
+            Credits: Creditos
+            Licensing: Licencias
+            Support: Soporte
+            Client Docs: Documentos del Cliente
+            Installing: Instalación
+            Basic Usage: Uso Básico
+            Full-Screen Map: Mapa de Pantalla Completa
+            Settings: Ajustes
+            Overview: Descripción General
+            Grid: Cuadrícula
+            Minimap: Mini-Mapa
+            Minimap Position: Posición Mini-Mapa
+            Full-Screen Map: Mapa de Pantalla Completa
+            Webmap: Mapa Web
+            Waypoint: Punto de Ruta
+            Waypoint Beacons: Balizas de Punto de Ruta
+            Cartography: Cartografía
+            Advanced Options: Configuración Avanzada
+            Waypoints: Puntos de Ruta
+            Server Docs: Documentos del Servidor
+            Installing: Instalación
+            Basic Usage: Uso Básico
+            Commands: Comandos
+            Waypoint: Punto de Ruta
+            Settings: Ajustes
+            Overview: Descripción General
+            Global Properties: Propiedades Globales
+            Default Dimension Properties: Propiedades de Dimensión Predeterminadas
+            Dimension - minecraft:overworld: Dimensión - minecraft:overworld
+            Dimension - minecraft:the_nether: Dimensión - minecraft:the_nether
+            Dimension - minecraft:the_end: Dimensión - minecraft:the_end
+            Multiplayer: Multijugador
+            Endpoints: Endpoints
+            Waypoint: Punto de Ruta
+            Tools & Customisation: Herramientas y Personalización
+            Custom Mob Icons: Iconos de Mobs Personalizados
+            Integrate your mod: Integra Tu Mod
+            JourneyMap Tools: Herramientas de JourneyMap
+            Map a multiplayer server: Mapa en Servidor Multijugador
+            Topographic: Topográfia
+            UI Themes: Temas de Interfaz de Usuario
+            Contributing: Contribuyendo
+            Translate the mod: Traducir el Mod
+            Translate the docs: Traducir los Documentos
+            Changelogs: Registros de Cambios              
+  - mike:
+      version_selector: true      
+  - search
+
+nav:
+  - Home: index.md
+  - About:
+      - Credits: About/credits.md
+      - Licensing: About/licensing.md
+      - Support: About/support.md
+  - Client Docs:
+      - Installing: Client Docs/installing.md
+      - Basic Usage: Client Docs/basic-usage.md
+      - Full-Screen Map: Client Docs/full-screen-map.md
+      - Settings:
+          - Overview: Client Docs/settings/overview.md
+          - Grid: Client Docs/settings/grid.md
+          - Minimap: Client Docs/settings/minimap.md
+          - Minimap Position: Client Docs/settings/minimap-position.md
+          - Full-Screen Map: Client Docs/settings/full-screen-map.md
+          - Webmap: Client Docs/settings/webmap.md
+          - Waypoint: Client Docs/settings/waypoint.md
+          - Waypoint Beacons: Client Docs/settings/waypoint-beacon.md
+          - Cartography: Client Docs/settings/cartography.md
+          - Advanced Options: Client Docs/settings/advanced.md
+      - Waypoints: Client Docs/waypoints.md
+  - Server Docs:
+      - Installing: Server Docs/installing.md
+      - Basic Usage: Server Docs/basic-usage.md
+      - Commands:
+          - Waypoint: Server Docs/Commands/waypoint_command.md
+      - Settings:
+          - Overview: Server Docs/settings/overview.md
+          - Global Properties: Server Docs/settings/global-properties.md
+          - Default Dimension Properties: Server Docs/settings/default-dimension-properties.md
+          - Dimension - minecraft:overworld: Server Docs/settings/dimension-overworld.md
+          - Dimension - minecraft:the_nether: Server Docs/settings/dimension-nether.md
+          - Dimension - minecraft:the_end: Server Docs/settings/dimension-end.md
+      - Multiplayer: Server Docs/multiplayer.md
+      - Endpoints: 
+          - Waypoint: Server Docs/Endpoints/waypoint.md
+  - Tools & Customisation:
+      - Custom Mob Icons: Tools and Customisation/custom-mob-icons.md
+      - Integrate your mod: Tools and Customisation/integration.md
+      - JourneyMap Tools: Tools and Customisation/journeymap-tools.md
+      - Map a multiplayer server: Tools and Customisation/multiplayer-server.md
+      - Topographic: Tools and Customisation/topographic.md
+      - UI Themes: Tools and Customisation/ui-themes.md
+  - Contributing:
+      - Translate the mod: Contributing/translate-mod.md
+      - Translate the docs: Contributing/translate-docs.md
+  - Changelogs: changelogs.md
+
+
