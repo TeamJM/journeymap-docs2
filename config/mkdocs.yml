@@ -110,8 +110,60 @@ plugins:
             Translate the mod: Translate the mod
             Translate the docs: Translate the docs
             Changelogs: Changelogs
+        - locale: es
+          default: false
+          name: Español
+          build: true
+          nav_translations:
+            Home: Principal
+            About: Acerca de
+            Credits: Creditos
+            Licensing: Licencias
+            Support: Soporte
+            Client Docs: Documentos del Cliente
+            Installing: Instalación
+            Basic Usage: Uso Básico
+            Full-Screen Map: Mapa de Pantalla Completa
+            Settings: Ajustes
+            Overview: Descripción General
+            Grid: Cuadrícula
+            Minimap: Mini-Mapa
+            Minimap Position: Posición Mini-Mapa
+            Full-Screen Map: Mapa de Pantalla Completa
+            Webmap: Mapa Web
+            Waypoint: Punto de Ruta
+            Waypoint Beacons: Balizas de Punto de Ruta
+            Cartography: Cartografía
+            Advanced Options: Configuración Avanzada
+            Waypoints: Puntos de Ruta
+            Server Docs: Documentos del Servidor
+            Installing: Instalación
+            Basic Usage: Uso Básico
+            Commands: Comandos
+            Waypoint: Punto de Ruta
+            Settings: Ajustes
+            Overview: Descripción General
+            Global Properties: Propiedades Globales
+            Default Dimension Properties: Propiedades de Dimensión Predeterminadas
+            Dimension - minecraft:overworld: Dimensión - minecraft:overworld
+            Dimension - minecraft:the_nether: Dimensión - minecraft:the_nether
+            Dimension - minecraft:the_end: Dimensión - minecraft:the_end
+            Multiplayer: Multijugador
+            Endpoints: Endpoints
+            Waypoint: Punto de Ruta
+            Tools & Customisation: Herramientas y Personalización
+            Custom Mob Icons: Iconos de Mobs Personalizados
+            Integrate your mod: Integra Tu Mod
+            JourneyMap Tools: Herramientas de JourneyMap
+            Map a multiplayer server: Mapa en Servidor Multijugador
+            Topographic: Topográfia
+            UI Themes: Temas de Interfaz de Usuario
+            Contributing: Contribuyendo
+            Translate the mod: Traducir el Mod
+            Translate the docs: Traducir los Documentos
+            Changelogs: Registros de Cambios              
   - mike:
-      version_selector: true
+      version_selector: true      
   - search
 
 nav:
@@ -162,3 +214,5 @@ nav:
       - Translate the mod: Contributing/translate-mod.md
       - Translate the docs: Contributing/translate-docs.md
   - Changelogs: changelogs.md
+
+
